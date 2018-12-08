@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name>Login</display-name>
+	<welcome-file-list>
+		<welcome-file>login.html</welcome-file>
+	</welcome-file-list>
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>org.form.register.Register</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/log</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>org.form.login.Login</servlet-class>
+	</servlet>
+</web-app>
